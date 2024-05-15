@@ -1,0 +1,145 @@
+/* all items be padding margin value 0*/
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+/* base style  */
+.container {
+    margin: 0 auto;
+    max-width: 1176px;
+    padding: 0 15px;
+}
+
+
+/* auxiliary class */
+.auxiliary_nav {
+    background: #ffff;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+/* styles section Header */
+.navigation {
+    background: #ccc;   
+}
+
+.control_box input {
+    max-width: 150px;
+    height: 20px;
+    padding: 12px;
+    outline: none;
+
+}
+
+.control_box button {
+    padding: 5px 30px;
+}
+
+.control_box button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.control_box button:active {
+    background-color: #f1cdcd;
+}
+
+.nav {
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+
+    /* styles section Main */   
+    
+.title_text  {
+        margin: 30px 0;
+        text-align: center;
+}
+
+
+.cards_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.card__item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    height: 250px;
+    margin: 15px;
+}
+    
+.card__item a img {
+    max-width: 200px;
+    height: 200px;
+}
+
+.card_item__title b {
+    font-size: 30px;
+}
+
+.footer__block {
+    text-align: center;
+    height: 70px;
+    background: #ccc;
+}
+
+.footer__block h3 {
+    margin-top: 35px;
+}  
+
+
+/* @media css for responsibibity */
+
+@media screen and (max-width: 376px) {
+  body {
+    background: #ffd1d1;
+  }
+
+  .title_text h1 {
+    font-size: large;
+  }
+
+  .control_box {
+    width: min-content;
+  }
+
+  .control_box button {
+    margin-top: 5px;
+    margin-left: 58px;
+} 
+
+.footer__title {
+    padding-top: 30px;
+}
+
+}
