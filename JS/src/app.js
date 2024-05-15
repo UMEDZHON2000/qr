@@ -2,7 +2,8 @@
 const btn = document.querySelector('.btn__nav');
 const getVal = document.querySelector('.ueser_value')
 const cardBlock = document.querySelector('.cards_block');
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (e) => {
+    event.preventDefault(); 
     const val = getVal.value;
     const pureNumer = parseInt(val.match(/\d+/));
     let counter = pureNumer;
